@@ -1,0 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+body {
+  font-family: 'Playfair Display', serif;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.image {
+  width: 80%;
+}

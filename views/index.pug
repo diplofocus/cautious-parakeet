@@ -1,5 +1,10 @@
-extends layout
-
-block content
-  h1= title
-  p= text
+doctype html
+html
+  head
+    style
+      include main.css
+  block content
+    h1= title
+    .content
+      p= text
+      img.image(src=img)
