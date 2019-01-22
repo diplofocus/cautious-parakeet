@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    style
+      include main.css
+    title "Tags"
+  block content
+    .page
+      h1 Tags
+      form(method="POST")
+        each tag in tags
+          .form-group
+            label(for=tag.id)= tag.text
+            input(type='checkbox', name=tag.id)
+        button(type='submit') Submit

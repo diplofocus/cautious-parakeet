@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    style
+      include main.css
+    title "Moar Data"
+  block content
+    .page
+      h1 Add more data
+      form(method="POST" action="/new-sentence")
+        .form-group
+          label(for='sentence') Sentence:
+          input#sentence(type='text', placeholder='Type sentence here', name='sentence')
+        .form-group
+          label(for='tags') Tags:
+          input#tags(type='text', placeholder='separate tags with a ";"', name='tags')
+        button.submit(type='submit') Submit
+      .sentences
+        ul
+          each s in sentences
+            li
+              .sentence
+                p= s.sentence
+                ul
+                  each t in s.tags
+                    li
+                      p= t
+
+
+
+

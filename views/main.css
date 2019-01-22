@@ -9,3 +9,31 @@ body {
 .image {
   width: 80%;
 }
+
+.page {
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.form-group input {
+    margin-top: .5em;
+}
+
+button {
+    padding: .5em 1em;
+    background-color: #abc;
+    margin-left: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+.sentence {
+    margin-bottom: 1em;
+}
