@@ -24,7 +24,7 @@ router
     });
   })
   .post((req, res) => {
-    const tagsText = req.body.tags.split(";");
+    const tagsText = req.body.tags.split(";").filter(x => !!x);
     Tag.findAll({
       where: {
         [Op.or]: tagsText.map(t => ({

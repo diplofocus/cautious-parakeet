@@ -37,3 +37,45 @@ ul {
 .sentence {
     margin-bottom: 1em;
 }
+
+
+.postcard {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    border: 1px solid #abc;
+    box-shadow: 1px 1px 4px rgba(100, 110, 120, 0.5)
+}
+
+.postcard .text-body {
+    padding: 1em;
+    margin: 1em;
+}
+
+.postcard .address-part {
+    padding: 1em;
+    margin: 1em;
+    min-height: 30em;
+    border-left: 1px solid #abc;
+}
+
+.postcard .address-part .stamp {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.postcard .stamp img {
+    width: 10em;
+    height: 10em;
+    align-self: flex-end;
+}
+
+.postcard .address-lines {
+    border-color: #abc;
+    padding: 2em 0;
+}
+
+.postcard .address-lines hr {
+    margin-bottom: 2em;
+}

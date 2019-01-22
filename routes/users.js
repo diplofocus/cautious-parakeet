@@ -12,8 +12,12 @@ router
     );
   })
   .post("/", (req, res) => {
-    console.log(req.body);
-    res.send("lol");
+    const tagIds = Object.entries(req.body).reduce(
+      (acc, [key, value]) => (value === "on" ? [...acc, key] : acc),
+      []
+    );
+
+    res.send(tagIds);
   });
 
 module.exports = router;

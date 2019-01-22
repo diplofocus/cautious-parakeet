@@ -4,7 +4,18 @@ html
     style
       include main.css
   block content
-    h1= title
     .content
-      p= text
-      img.image(src=img)
+      .postcard
+        .text-body
+          p= text
+        .address-part
+          .stamp
+            img(src='test.png')
+          .address-lines
+            hr
+            hr
+            hr
+            hr
+
+      .image
+        img.image(src=img)

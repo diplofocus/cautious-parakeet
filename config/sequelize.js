@@ -20,7 +20,7 @@ const Tag = TagModel(sequelize, Sequelize);
 Tag.belongsToMany(sequelize.models.sentence, { through: "SentenceTag" });
 Sentence.belongsToMany(sequelize.models.tag, { through: "SentenceTag" });
 
-sequelize.sync({ force: true });
+sequelize.sync({ force: false });
 
 module.exports = {
   sequelize,
