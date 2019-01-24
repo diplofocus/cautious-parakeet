@@ -14,6 +14,13 @@ body {
     margin: 0 auto;
 }
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 .form-group {
     display: flex;
     flex-direction: column;

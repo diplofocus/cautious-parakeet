@@ -8,8 +8,9 @@ html
     .page
       h1 Tags
       form(method="POST")
-        each tag in tags
-          .form-group
-            label(for=tag.id)= tag.text
-            input(type='checkbox', name=tag.id)
+        .tags
+          each tag in tags
+            .form-group
+              label(for=tag.id)= tag.text
+              input(type='checkbox', name=tag.id)
         button(type='submit') Submit
